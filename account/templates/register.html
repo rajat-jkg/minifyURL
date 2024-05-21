@@ -1,0 +1,22 @@
+{%extends 'base.html'%}
+{%block headTag%}
+<title>Register - minifyURL</title>
+{%endblock%}
+
+{%block content%}
+
+<div class="formcontainer">
+<form method="post">
+    <h2>Register</h2>
+    {%csrf_token%}
+    <input type="text" name="userName" placeholder="Username" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="pwd" placeholder="Password" required>
+    <input type="password" name="confirm-pwd" placeholder="Confirm Password" required>
+    <p id="message">{{error}}</p>
+    <input type="submit" class="form-button">
+    <p>Already have an account?  <a href="{% url 'login' %}">Login</a></p>
+
+</form>
+</div>
+{%endblock%}

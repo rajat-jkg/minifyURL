@@ -1,0 +1,6 @@
+minifyURL/__pycache__/
+home/__pycache__/
+home/migrations/__pycache__/
+account/__pycache__/
+account/migrations/__pycache__/
+db.sqlite3

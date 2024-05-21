@@ -1,0 +1,52 @@
+table.visitstable{
+    margin: 20px 0 ;
+    border: 1px double   black;
+    max-width: 100%;
+}
+@media only screen and (min-width:600px){
+table.visitstable th, table.visitstable td{
+    text-align: left;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+table.visitstable{
+    margin: 20px 10px ;
+    border: 1px double   black;
+    max-width: 100%;
+}
+
+table.visitstable th{
+    color: antiquewhite;
+    background-color: black;
+}
+
+table.visitstable tr:nth-child(even){
+    background-color: #ccc;
+}}
+
+@media only screen and (max-width:600px){
+    table.visitstable th, table.visitstable td{
+        text-align: left;
+        border: 1px solid #ddd;
+        padding: 2px;
+        font-size: 11px;
+    }
+
+    table.visitstable{
+        margin: 20px auto ;
+        border: 1px double   black;
+        max-width: 100%;
+    }    
+    
+    table.visitstable th{
+        color: antiquewhite;
+        background-color: black;
+        font-size: 11px;
+    }
+    
+    table.visitstable tr:nth-child(even){
+        background-color: #ccc;
+
+    }}
+    
+    

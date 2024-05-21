@@ -1,0 +1,26 @@
+{%extends 'base.html'%}
+{% load static %}
+
+{%block headTag%}
+
+<title>Login - MinifyURL</title>
+
+{%endblock%}
+
+
+{%block content%}
+<div class="formcontainer">
+    <h2>Login</h2>
+    <form method="post">
+        {%csrf_token%}
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" id="password" placeholder="Password">
+        <input type="submit" value="Submit" class="form-button"/>
+        <p>Don't have an account? <a href="{%url 'register'%}">Register</a></p>
+    </form>
+</div>
+    {%if errorMessage%}
+    {{errorMessage}}
+    {%endif%}
+
+{%endblock%}
